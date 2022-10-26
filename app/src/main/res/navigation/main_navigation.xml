@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.navigationrail.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_navigationRailFragment"
+            app:destination="@id/navigationRailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigationRailFragment"
+        android:name="com.example.navigationrail.NavigationRailFragment"
+        android:label="fragment_navigation_rail"
+        tools:layout="@layout/fragment_navigation_rail" />
+    <fragment
+        android:id="@+id/fileFragment"
+        android:name="com.example.navigationrail.FileFragment"
+        android:label="fragment_file"
+        tools:layout="@layout/fragment_file" />
+    <fragment
+        android:id="@+id/musicFragment"
+        android:name="com.example.navigationrail.MusicFragment"
+        android:label="fragment_music"
+        tools:layout="@layout/fragment_music" />
+    <fragment
+        android:id="@+id/imagesFragment"
+        android:name="com.example.navigationrail.ImagesFragment"
+        android:label="fragment_images"
+        tools:layout="@layout/fragment_images" />
+</navigation>
